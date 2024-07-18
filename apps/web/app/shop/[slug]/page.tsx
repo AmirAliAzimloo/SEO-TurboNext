@@ -9,9 +9,9 @@ interface IProductPageProps{
 }
 
 const ProductPage:FC<IProductPageProps> = async ({params}) => {
-   const res=await fetch(`https://api.escuelajs.co/api/v1/categories/${params.slug}`,{cache:"no-store"});
+   const res=await fetch(`https://api.escuelajs.co/api/v1/products/${params.slug}`,{cache:"no-store"});
    const data=await res.json();
-   console.log(data)
+   
    if(!data.id){
       notFound()
    }
