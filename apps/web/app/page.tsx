@@ -36,6 +36,38 @@ export default function Home() {
         <meta name="twitter:site" content="twitter-site" />
       </>
 
+         {/* HTML 5 Structure */}
+         <div>
+            <main>
+               <h1></h1>
+               <section>
+                  <header>
+                     <h2></h2>
+                  </header>
+                  <p></p>
+                  <h3></h3>
+                  <img />
+                  <p></p>
+                  <h3></h3>
+                  <p></p>
+                  <ul></ul>
+                  <p></p>
+                  <div>
+                     <article></article>
+                     <article></article>
+                     <article></article>
+                     <article></article>
+                  </div>
+               </section>
+            </main>
+            <aside>
+               <article></article>
+               <article></article>
+               <article></article>
+               <article></article>
+            </aside>
+         </div>
+
       <div className={styles.page}>
         <div className="!bg-green-500 !text-red-500">Test Tailwind Config</div>
         <main className={styles.main}>
