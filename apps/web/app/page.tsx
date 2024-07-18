@@ -4,102 +4,133 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <div className="!bg-green-500 !text-red-500" >
-        Test Tailwind Config
-      </div>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <>
+      {/* SEO Meta Tags */}
+      <>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="shortcut icon"
+          href="/favicon.ico"
+          type="image/x-icon"
         />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://url" />
+
+        <title>this is page title</title>
+        <meta name="description" content="this is page discrption" />
+
+        <meta property="og:site_name" content="site_name" />
+        <meta property="og:title" content="this is page title" />
+        <meta property="og:description" content="this is page discrption" />
+        <meta property="og:url" content="https://url" />
+
+        <meta name="twitter:title" content="this is page title" />
+        <meta name="twitter:description" content="this is page discrption" />
+        <meta
+          name="twitter:image"
+          content="https://url.svg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="twitter-site" />
+      </>
+
+      <div className={styles.page}>
+        <div className="!bg-green-500 !text-red-500">Test Tailwind Config</div>
+        <main className={styles.main}>
+          <Image
+            className={styles.logo}
+            src="/next.svg"
+            alt="Next.js logo"
+            width={180}
+            height={38}
+            priority
+          />
+          <ol>
+            <li>
+              Get started by editing <code>app/page.tsx</code>
+            </li>
+            <li>Save and see your changes instantly.</li>
+          </ol>
+
+          <div className={styles.ctas}>
+            <a
+              className={styles.primary}
+              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className={styles.logo}
+                src="/vercel.svg"
+                alt="Vercel logomark"
+                width={20}
+                height={20}
+              />
+              Deploy now
+            </a>
+            <a
+              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondary}
+            >
+              Read our docs
+            </a>
+          </div>
+          <Button
+            appName="web"
+            className="mx-auto rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+          >
+            Open alert
+          </Button>
+        </main>
+        <footer className={styles.footer}>
           <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              aria-hidden
+              src="/file-text.svg"
+              alt="File icon"
+              width={16}
+              height={16}
             />
-            Deploy now
+            Learn
           </a>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.secondary}
           >
-            Read our docs
+            <Image
+              aria-hidden
+              src="/window.svg"
+              alt="Window icon"
+              width={16}
+              height={16}
+            />
+            Examples
           </a>
-        </div>
-        <Button
-          appName="web"
-          className="mx-auto rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-        >
-          Open alert
-        </Button>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file-text.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <a
+            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/globe.svg"
+              alt="Globe icon"
+              width={16}
+              height={16}
+            />
+            Go to nextjs.org →
+          </a>
+        </footer>
+      </div>
+    </>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "grpc-nextjs-turborepo",
+  "name": "seo-turbonext",
   "private": true,
   "scripts": {
     "build": "turbo build",
