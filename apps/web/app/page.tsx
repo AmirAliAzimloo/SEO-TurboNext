@@ -2,6 +2,23 @@ import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
 
+export async function generateMetadata({ }) {
+  const siteURL = process.env.NEXT_PUBLIC_BASE_URL;
+  
+  return {
+     title: `متا تایتبل`,
+     description: `متا دیسکریپشن`,
+     alternates: {
+        canonical: `${siteURL}`,
+     },
+     robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+     },
+  };
+}
+
 export default function Home() {
   function addSiteJsonLd() {
     return {
