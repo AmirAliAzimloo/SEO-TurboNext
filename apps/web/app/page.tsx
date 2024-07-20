@@ -180,7 +180,6 @@ export default function Home() {
       </div>
 
       <div className={styles.page}>
-        <div className="!bg-green-500 !text-red-500">Test Tailwind Config</div>
         <main className={styles.main}>
           <Image
             className={styles.logo}
